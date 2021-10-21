@@ -42,9 +42,9 @@ const Home = () => {
         <Section className={classes.pagePaddingTop}>
           <Hero />
         </Section>
-        <Section className={classes.sectionNoPaddingTop}>
+        {/* <Section className={classes.sectionNoPaddingTop}>
           <Hub />
-        </Section>
+        </Section> */}
       </div>
       <Section>
         <Partners data={integrations} />
@@ -53,9 +53,9 @@ const Home = () => {
         <Customization />
       </SectionAlternate>
       <Divider />
-      <SectionAlternate innerNarrowed>
+      {/* <SectionAlternate innerNarrowed>
         <Pricings />
-      </SectionAlternate>
+      </SectionAlternate> */}
       <Divider />
     </div>
   );

@@ -50,11 +50,11 @@ const useStyles = makeStyles(theme => ({
     },
   },
   logoContainer: {
-    width: 100,
-    height: 28,
+    // width: 100,
+    height: 40,
     [theme.breakpoints.up('md')]: {
-      width: 120,
-      height: 32,
+      // width: 120,
+      height: 55,
     },
   },
   logoImage: {
@@ -74,7 +74,7 @@ const Topbar = props => {
         <a href="/" title="thefront">
           <Image
             className={classes.logoImage}
-            src="/images/logos/logo.svg"
+            src="/images/logos/logo-bmkg.png"
             alt="thefront"
             lazy={false}
           />
@@ -95,6 +95,17 @@ const Topbar = props => {
             </Typography>
           </ListItem>
           <ListItem className={classes.listItem}>
+            <Typography
+              variant="body1"
+              color="textSecondary"
+              className={classes.listItemText}
+              component="a"
+              href="/home"
+            >
+              Events
+            </Typography>
+          </ListItem>
+          {/* <ListItem className={classes.listItem}>
             <Typography
               variant="body1"
               color="textSecondary"
@@ -128,7 +139,7 @@ const Topbar = props => {
             >
               Full Product
             </Button>
-          </ListItem>
+          </ListItem> */}
         </List>
       </Hidden>
       <Hidden mdUp>

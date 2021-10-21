@@ -46,20 +46,20 @@ const Hero = props => {
           <SectionHeader
             title={
               <span>
-                Beautiful data representation
+                Rekonsiliasi Data dan Metadata
                 <br />
                 <Typography component="span" variant="inherit" color="primary">
-                  built with theFront.
+                  Pos Hujan Kerjasama
                 </Typography>
               </span>
             }
             subtitle="World developers use our theFront theme to build their internal tools and client admin applications. Save yourself time and money."
             ctaGroup={[
               <Button variant="contained" color="primary" size="large">
-                Start now
+                Lihat Agenda
               </Button>,
               <Button variant="outlined" color="primary" size="large">
-                Learn more
+                Kontak Panitia
               </Button>,
             ]}
             align="left"

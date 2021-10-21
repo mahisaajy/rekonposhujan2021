@@ -35,17 +35,25 @@ const Customization = props => {
   return (
     <div className={clsx(classes.root, className)} {...rest}>
       <SectionHeader
-        label="Customization"
-        title="Customize your product"
-        subtitle="We aim to take care of you. Need help with installation, find a bug, or just need a clarifiction about our documentation? We'll be there to lend a helping hand."
+        label="Inovasi"
+        title="Aplikasi Android ePHK"
+        subtitle="Aplikasi ePHK (Pos Hujan Kerjasama) BMKG adalah aplikasi yang ditujukan untuk mendukung operasional pengamatan dan pencatatan data curah hujan pos hujan kerjasama."
         align="center"
         ctaGroup={[
-          <Button variant="contained" color="primary" size="large">
-            Start now
-          </Button>,
-          <Button variant="outlined" color="primary" size="large">
-            Learn more
-          </Button>,
+          // <Button variant="contained" color="primary" size="large">
+          //   Start now
+          // </Button>,
+          // <Button variant="outlined" color="primary" size="large">
+          //   Learn more
+          // </Button>,
+          <a href="https://play.google.com/store/apps/details?id=id.bmkg.poshujan" target="_blank" title="thefront">
+            <Image
+              // className={classes.logoImage}
+              src="/images/logos/google-play.png"
+              alt="thefront"
+              lazy={false}
+            />
+          </a>
         ]}
       />
       <Grid container spacing={isMd ? 4 : 2}>
