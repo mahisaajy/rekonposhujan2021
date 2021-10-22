@@ -29,10 +29,10 @@ const useStyles = makeStyles(theme => ({
   },
   logoContainer: {
     // width: 120,
-    height: 50,
+    // height: 50,
   },
   logoImage: {
-    width: '100%',
+    width: '20%',
     height: '100%',
   },
   socialIcon: {
