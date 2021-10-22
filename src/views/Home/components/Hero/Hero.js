@@ -5,6 +5,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid, Button, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -53,14 +54,19 @@ const Hero = props => {
                 </Typography>
               </span>
             }
-            subtitle="World developers use our theFront theme to build their internal tools and client admin applications. Save yourself time and money."
-            ctaGroup={[
+            subtitle="Online via Zoom. 27 s/d 28 Oktober 2021"
+            ctaGroup={[    
+              <Link to="event" style={{ textDecoration: 'none' }}>          
               <Button variant="contained" color="primary" size="large">
                 Lihat Agenda
-              </Button>,
+              </Button>
+              </Link>
+              ,
+              <Link to={{ pathname: 'https://wa.me/6281329324769' }} style={{ textDecoration: 'none'}}>
               <Button variant="outlined" color="primary" size="large">
                 Kontak Panitia
-              </Button>,
+              </Button>
+              </Link>,
             ]}
             align="left"
             disableGutter
@@ -77,7 +83,7 @@ const Hero = props => {
           data-aos={'fade-up'}
         >
           <Image
-            src="/images/illustrations/dashboard-screenshot.jpg"
+            src="/images/illustrations/img21.jpeg"
             alt="TheFront Company"
             className={classes.image}
             data-aos="flip-left"

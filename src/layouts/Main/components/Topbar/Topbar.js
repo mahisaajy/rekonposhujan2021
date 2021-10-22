@@ -100,9 +100,9 @@ const Topbar = props => {
               color="textSecondary"
               className={classes.listItemText}
               component="a"
-              href="/home"
+              href="/event"
             >
-              Events
+              Event
             </Typography>
           </ListItem>
           {/* <ListItem className={classes.listItem}>

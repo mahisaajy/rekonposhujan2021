@@ -56,18 +56,22 @@ const Customization = props => {
           </a>
         ]}
       />
-      <Grid container spacing={isMd ? 4 : 2}>
-        <Grid item xs={12} sm={6}>
+      <Grid container spacing={isMd ? 8 : 2}>
+        <Grid item sm={1}>
+          <Grid container justif="center" alignItems="center">            
+          </Grid>
+        </Grid>
+        <Grid item xs={12} sm={5}>
           <Grid container justif="center" alignItems="center">
             <Image
-              src="/images/illustrations/dashboard-screenshot.jpg"
+              src="/images/illustrations/ephk1.jpg"
               alt="TheFront Company"
               className={classes.image}
               data-aos="fade-up"
             />
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={5}>
           <Grid
             container
             justif="center"
@@ -75,11 +79,15 @@ const Customization = props => {
             className={classes.lastGrid}
           >
             <Image
-              src="/images/illustrations/dashboard-screenshot1.jpg"
+              src="/images/illustrations/ephk2.jpg"
               alt="TheFront Company"
               className={classes.image}
               data-aos="fade-up"
             />
+          </Grid>
+        </Grid>
+        <Grid item sm={1}>
+          <Grid container justif="center" alignItems="center">            
           </Grid>
         </Grid>
       </Grid>

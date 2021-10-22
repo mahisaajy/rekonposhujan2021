@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import { IconButton, List, ListItem } from '@material-ui/core';
+import { IconButton, List, ListItem, Typography } from '@material-ui/core';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -28,8 +28,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 0,
   },
   logoContainer: {
-    width: 120,
-    height: 32,
+    // width: 120,
+    height: 50,
   },
   logoImage: {
     width: '100%',
@@ -65,14 +65,26 @@ const Footer = props => {
               <a href="/" title="thefront">
                 <Image
                   className={classes.logoImage}
-                  src="/images/logos/logo-negative.svg"
+                  src="/images/logos/logo-bmkg.png"
                   alt="thefront"
                   lazy={false}
                 />
               </a>
             </div>
           </ListItem>
-          <ListItem disableGutters>
+          <Typography style={{color: "white"}}>
+            Rekonsiliasi Data dan Metadata
+          </Typography>
+          <Typography style={{color: "white"}}>
+            Pos Hujan Kerjasama
+          </Typography>
+          <Typography style={{color: "white"}}>
+            Tahun 2021
+          </Typography>
+          <Typography color="textSecondary" style={{color: "white"}} component="p">
+            Developed by: <a href='https://github.com/mahisaajy' target={"_blank"} style={{color: "white"}}>@mahisaajy</a>
+          </Typography>
+          {/* <ListItem disableGutters>
             <IconButton className={classes.socialIcon}>
               <FacebookIcon className={classes.icon} />
             </IconButton>
@@ -85,7 +97,7 @@ const Footer = props => {
             <IconButton className={classes.socialIcon}>
               <PinterestIcon className={classes.icon} />
             </IconButton>
-          </ListItem>
+          </ListItem> */}
         </List>
       </div>
     </div>

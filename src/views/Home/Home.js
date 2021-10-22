@@ -47,7 +47,7 @@ const Home = () => {
         </Section> */}
       </div>
       <Section>
-        <Partners data={integrations} />
+        <Partners data={integrations} />        
       </Section>
       <SectionAlternate>
         <Customization />
