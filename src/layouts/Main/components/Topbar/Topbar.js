@@ -51,14 +51,14 @@ const useStyles = makeStyles(theme => ({
   },
   logoContainer: {
     // width: 100,
-    height: 40,
+    // height: 40,
     // [theme.breakpoints.up('md')]: {
     //   // width: 120,
     //   height: 55,
     // },
   },
   logoImage: {
-    width: '100%',
+    width: '15%',
     height: '100%',
   },
 }));
