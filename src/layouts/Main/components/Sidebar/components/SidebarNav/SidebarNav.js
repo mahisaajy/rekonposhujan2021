@@ -62,6 +62,17 @@ const SidebarNav = props => {
           variant="h6"
           color="primary"
           component="a"
+          href="/event"
+          className={classes.listItemLink}
+        >
+          Event
+        </Typography>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
+        <Typography
+          variant="h6"
+          color="primary"
+          component="a"
           href="/signup-simple"
           className={classes.listItemLink}
         >
@@ -91,7 +102,7 @@ const SidebarNav = props => {
         >
           Upgrade Now
         </Button>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 };
